@@ -17,7 +17,7 @@ sudo apt-get install default-jdk -y
 
 -----**** Send key to DC ****-----
 
-scp -i abc.pem abc.pem ubuntu@oub-ip:~/.ssh/
+scp -i abc.pem abc.pem ubuntu@ip-adress:~/.ssh/
 
 -----**** Configure profile ****-----
 
@@ -101,12 +101,12 @@ echo "ruok" | nc localhost 2181 ; echo
 
 sudo nano /etc/hosts
 
-172.31.81.58 ip-172-31-81-58.ec2.internal zk1
-172.31.81.58 ip-172-31-81-58.ec2.internal kf1
-172.31.90.58 ip-172-31-90-58.ec2.internal zk2
-172.31.90.58 ip-172-31-90-58.ec2.internal kf2
-172.31.84.245 ip-172-31-84-245.ec2.internal zk3
-172.31.84.245 ip-172-31-84-245.ec2.internal kf3
+172.31.84.4 ip-172-31-84-4.ec2.internal zk1
+172.31.84.4 ip-172-31-84-4.ec2.internal kf1
+172.31.92.85 ip-172-31-92-85.ec2.internal zk2
+172.31.92.85 ip-172-31-92-85.ec2.internal kf2
+172.31.93.202 ip-172-31-93-202.ec2.internal zk3
+172.31.93.202 ip-172-31-93-202.ec2.internal kf3
 
 ## Do this on all 3 nodes
 
